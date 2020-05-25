@@ -23,8 +23,8 @@ class App extends Component {
       ParashaHebrew_user: '',
       currentDate_user: '',
       today: new Date(),
-      // hostVar: ''
-      hostVar: 'http://localhost:4000'
+      hostVar: ''
+      // hostVar: 'http://localhost:4000'
     }
     this.updateDate = this.updateDate.bind(this);
 
@@ -46,10 +46,10 @@ class App extends Component {
 
 
         this.setState({
-          todayHebrewDate: doc.userHebrewDate,
-          ParashaEnglish: doc.ParashaEnglish,
-          englishHebMonth: doc.englishHebMonth,
-          ParashaHebrew: doc.ParashaHebrew,
+          // todayHebrewDate: doc.userHebrewDate,
+          // ParashaEnglish: doc.ParashaEnglish,
+          // englishHebMonth: doc.englishHebMonth,
+          // ParashaHebrew: doc.ParashaHebrew,
           currentDate: doc.currentDate,
 
         })
@@ -115,7 +115,7 @@ class App extends Component {
       <div className="AppWrap">
         <div className="App">
           <div className="rowTop">
-            <Wave iterations='1' speed='10' text="TODAY HEBREW DATE" className="he" />
+            <Wave iterations='1' speed='10' text="HEBREW DATE APP" className="he" />
             <div className="first" style={{ direction: 'rtl' }}>
               {this.state.todayHebrewDate}
             </div>
