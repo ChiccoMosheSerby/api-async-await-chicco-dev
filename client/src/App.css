@@ -1,0 +1,264 @@
+
+*{
+  box-sizing: border-box;
+  font-weight: bold;
+  text-align: center;
+}
+
+html,body{
+  font-size: 1.2em;
+  background: #12345678;
+  /* background: -moz-linear-gradient(258deg, rgba(153,0,0,1) 0%, rgba(152,154,255,1) 50%, rgba(255,213,0,1) 100%);
+  background: -webkit-linear-gradient(258deg, rgba(153,0,0,1) 0%, rgba(152,154,255,1) 50%, rgba(255,213,0,1) 100%);
+  background: linear-gradient(258deg, rgba(153,0,0,1) 0%, rgba(152,154,255,1) 50%, rgba(255,213,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#990000",endColorstr="#ffd500",GradientType=1); */
+}
+.AppWrap{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-content: flex-start;
+  height: 100vh;
+
+}
+.App {
+  /* border:solid 1px rgba(116, 116, 116, 0.26); */
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-content:flex-start;
+  height:100%;
+  width: 700px;
+  margin:auto;
+  background-image: url('/img/Akiva.png');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size:auto 100% ;
+  border-radius: 5px;
+  padding:20px;
+  /* -webkit-animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; */
+}
+
+.rowTop div span{
+  border-bottom: 5px solid rgba(34, 34, 34, 0.26);
+
+}
+ input{
+  /* font-size:1.5em; */
+   resize:none !important; 
+}  
+
+.rowTop{
+  width:100%;
+  display:flex;
+  margin:auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content:center;
+  height: 50vh;
+  /* color:rgb(255, 255, 255); */
+    
+     color:rgb(255, 255, 255);
+
+}
+
+@keyframes entering-smooth {
+  0% {
+/* height: 0; */
+opacity:0;
+  }
+  50% {
+    /* height: 80vh;  */
+    opacity:.3;
+
+    }
+    100% {
+      opacity:1;
+    }
+}
+.user{
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-content:flex-start;
+  color:white;
+}
+
+
+.first{
+  color:#1c1d63 !important;
+  font-size: 1.8rem;
+   text-shadow:
+  -1px -1px 0 #dddddd,  
+   1px -1px 0 #dddddd,
+   -1px 1px 0 #dddddd,
+    1px 1px 0 #dddddd;
+  z-index: 1;
+  padding:5px;
+
+  /* border-radius: 5px; */
+}
+.second{
+  color:  #ffffff;
+  background-color: rgba(34, 34, 34, 0.26);
+  padding:5px;
+  /* border-radius: 5px; */
+  font-size:0.8rem;
+  animation: entering-smooth 5s linear;
+}
+
+.formWrap{
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align:center;
+  
+}
+
+.imgForm{
+  padding:0;
+  width: 80%;
+  height: auto;
+  animation: App-logo-spin infinite 10s linear;
+}
+
+
+.colData,.text-transition_inner{
+  text-align:center;
+  font-weight: bold;
+  color:#e69f44;
+  justify-self: center;
+}
+
+.row{
+  background-color: rgba(34, 34, 34, 0.493);
+  padding:15px;
+  border-radius: 5px;
+  display:grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  justify-items: center;
+  align-items: center;
+  text-align:center;
+  font-size: 1rem;
+  margin:auto;
+  width:100%;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ .dateInpt{
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 15px;
+  outline: none;
+  margin:auto;
+  width:100%;
+  min-width: 100px;
+  font-family: 'PT Sans', sans-serif;
+  display: flex;
+  flex-direction: row;
+color:white;
+   appearance: none; 
+border: 0.5px solid rgb(255, 255, 255);
+background-color: rgba(34, 34, 34, 0.363);
+
+} 
+/* input[type="date"]::before{
+  color: #070707;
+  content: attr(placeholder);
+} */
+/* input[type="date"]:focus::before {
+  content: "" !important;
+} */
+/* input[type="date"]:not(.has-value){
+  color: #ffffff;
+  content: attr(placeholder) !important; */
+
+/* appearance: none; */
+/* border: 0.5px solid rgb(255, 255, 255); */
+/* background-color: rgba(34, 34, 34, 0.363); */
+/* font-size: 50px; */
+/* min-height: 50px; */
+/* line-height: 50px; */
+/* min-width: 200px; */
+/* } */
+
+/* ::-webkit-datetime-edit-text { padding: 0.1rem; } */
+/* ::-webkit-datetime-edit-month-field { text-transform: uppercase; }
+::-webkit-datetime-edit-day-field { text-transform: uppercase; }
+::-webkit-datetime-edit-year-field { text-transform: uppercase; }
+::-webkit-inner-spin-button { display: none; } */
+
+/* input[type=date]::-webkit-inner-spin-button,
+  input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  } */
+
+  .submitBtn{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(34, 34, 34, 0.363);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-top: 5px;
+    border: none;
+    outline:none;
+    border:0.5px solid white;
+  }
+.submitBtn:hover{
+  background-color:rgba(255, 255, 255, 0.233);
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px){
+  .colData,.text-transition_inner{
+
+    /* padding:10px; */
+
+  }
+  input[type="date"]{
+    width: 100%;
+  }
+  input[type="date"]::before{
+    color: rgb(255, 255, 255);
+    content: attr(placeholder) "SELECT DATE";
+    text-align: center;
+    margin:auto;
+    font-size: 0.7rem;
+}
+
+
+  .row{
+
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+  }
+  .App {
+    border-radius: 0;
+    padding:1px;
+
+    height: 80vh;
+    margin:auto;
+    width: 100vw;
+    margin:auto;
+  }
+  .imgForm{
+    width: 70%;
+  }
+}
+
