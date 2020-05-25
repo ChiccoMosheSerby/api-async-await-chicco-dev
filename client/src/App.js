@@ -124,12 +124,12 @@ class App extends Component {
             <div className="second"> {this.state.ParashaHebrew}</div>
           </div>
           <div className="formWrap">
-            <img className="imgForm" src="/img/moon.png" alt="the sun" />
+            <img className="imgForm" src="/img/moon.png" alt="the moon" />
             <form className="theForm" onSubmit={this.updateDate}>
               <input name="date" id="date" className="dateInpt" type="date" required />
               <button type="submit" className="submitBtn">GET HEBREW DATE</button>
             </form>
-            <img className="imgForm" src="/img/sun.png" alt="the moon" />
+            <img className="imgForm" src="/img/sun.png" alt="the sun" />
           </div>
           <div className="user">
             <div className="row">

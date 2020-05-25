@@ -3,6 +3,7 @@
   box-sizing: border-box;
   font-weight: bold;
   text-align: center;
+  
 }
 
 html,body{
@@ -132,6 +133,7 @@ opacity:0;
   font-weight: bold;
   color:#e69f44;
   justify-self: center;
+  user-select:all;
 }
 
 .row{
