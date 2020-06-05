@@ -9,10 +9,10 @@
 html,body{
   font-size: 1.2em;
   background: #12345678;
-  /* background: -moz-linear-gradient(258deg, rgba(153,0,0,1) 0%, rgba(152,154,255,1) 50%, rgba(255,213,0,1) 100%);
-  background: -webkit-linear-gradient(258deg, rgba(153,0,0,1) 0%, rgba(152,154,255,1) 50%, rgba(255,213,0,1) 100%);
-  background: linear-gradient(258deg, rgba(153,0,0,1) 0%, rgba(152,154,255,1) 50%, rgba(255,213,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#990000",endColorstr="#ffd500",GradientType=1); */
+  background: -moz-linear-gradient(96deg, #181a1b78 8.43%, #5d7280 94.44%);
+  background: -webkit-linear-gradient(96deg, #181a1b78 8.43%, #5d7280 94.44%);
+  background: linear-gradient(96deg, #181a1b78 8.43%, #5d7280 94.44%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#990000",endColorstr="#ffd500",GradientType=1);
 }
 .AppWrap{
   display:flex;
