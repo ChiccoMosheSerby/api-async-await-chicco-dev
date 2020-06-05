@@ -45,6 +45,8 @@ html,body{
 .rowTop div span{
   border-bottom: 5px solid rgba(34, 34, 34, 0.26);
 
+  
+
 }
  input{
   /* font-size:1.5em; */
@@ -100,6 +102,11 @@ opacity:0;
   z-index: 1;
   padding:5px;
 
+  background: #2222225d;
+  background: -moz-linear-gradient(96deg, #2222225d 8.43%, #5d7280 94.44%);
+  background: -webkit-linear-gradient(96deg, #2222225d 8.43%, #5d7280 94.44%);
+  background: linear-gradient(96deg, #2222225d 8.43%, #5d7280 94.44%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#990000",endColorstr="#ffd500",GradientType=1);
   /* border-radius: 5px; */
 }
 .second{
@@ -147,6 +154,9 @@ opacity:0;
   text-align:center;
   font-size: 1rem;
   margin:auto;
+
+
+
   width:100%;
 }
 
@@ -208,19 +218,63 @@ background-color: rgba(34, 34, 34, 0.363);
     -webkit-appearance: none;
   } */
 
+  @keyframes btnsAnimationHover {
+    0% {
+        background: #2222225d;
+    
+       
+   }
+   25%{
+    background: #4444445d;
+
+   }
+   50%{
+    background: #7474745d;
+    
+
+   }
+   75%{
+    background: #bdbcbc5d;
+    
+
+   }
+        100%{
+            background: #2222225d;
+
+        }
+
+  }
+  
+  /* The element to apply the animation to */
+  .animated {
+
+    animation-name: btnsAnimationHover;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: linear;
+}
+
   .submitBtn{
     text-align: center;
     width: fit-content;
     margin: auto;
     padding: 15px;
     border-radius: 10px;
-    background-color: rgba(34, 34, 34, 0.363);
+    /* background-color: #2222225d; */
+
+    background: #2222225d;
+    background: -moz-linear-gradient(96deg, #2222225d 8.43%, #5d7280 94.44%);
+    background: -webkit-linear-gradient(96deg, #2222225d 8.43%, #5d7280 94.44%);
+    background: linear-gradient(96deg, #2222225d 8.43%, #5d7280 94.44%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#990000",endColorstr="#ffd500",GradientType=1);
+    
     color: rgb(255, 255, 255);
     cursor: pointer;
     margin-top: 5px;
     border: none;
     outline:none;
-    border:0.5px solid white;
+    border:0.5px solid rgba(255, 255, 255, 0.404);
   }
 .submitBtn:hover{
   background-color:rgba(255, 255, 255, 0.233);
